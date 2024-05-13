@@ -66,6 +66,11 @@ for (let i = 0; i < 6; i++) {
 	}
 
 	scene.add(wall);
+
+	for (let j = 0; j < conesNumber; j++) {
+		scene.attach(objects[j]);
+		objects[j].rotation.set(0, 0, 0);
+	}
 }
 
 window.addEventListener("deviceorientation", deviceOrientation, true);
